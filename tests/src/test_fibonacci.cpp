@@ -1,7 +1,7 @@
 #include "test_utils.h"
 #include "fibonacci.h"
 
-int test_fibonacci(){
+void test_fibonacci(){
 	assert(fibonacci(-1) == 0);
 	assert(fibonacci(0) == 0);
 	assert(fibonacci(1) == 1);
@@ -9,5 +9,9 @@ int test_fibonacci(){
 	assert(fibonacci(3) == 2);
 	assert(fibonacci(4) == 3);
 	assert(fibonacci(12) == 144);
+}
+
+int	main(void){
+	test_fibonacci();
 	return (0);
 }
