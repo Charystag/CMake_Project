@@ -9,7 +9,7 @@ int	fibonacci(int a){
 
 	if (a < 0)
 		return (0);
-	if (a < 3)
+	if (a < 2)
 		return (1);
 	if (a > 99)
 		return (0);
