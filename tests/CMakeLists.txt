@@ -3,12 +3,22 @@ include_directories(${INC_DIR})
 function(create_test_exec func_name)
 	set(target test_${func_name})
 	add_executable(test_${func_name} ${SRC_DIR}/test_${func_name}.cpp)
-	target_link_libraries(${target} ${func_name})
+	target_link_libraries(${target} functions)
 	add_test(NAME Test_${func_name} COMMAND ${target})
 endfunction()
 
-file(GLOB files LIST_DIRECTORIES false ${SRC_DIR}/*)
+# file(GLOB files LIST_DIRECTORIES false ${S)
+# From the cmake documentation of the file function
+# https://cmake.org/cmake/help/latest/command/file.html
+# We can see that it is not recommended to use globing 
+# to retrieve files.
 
-foreach(src IN ${files})
-	message(DEBUG "source file looked at is : `${src}'")
+foreach(src IN ITEMS
+	prime
+	palindrome
+	fibonacci
+	factorial
+	)
+	#message(NOTICE "source file looked at is : `${src}'")
+	create_test_exec(${src})
 endforeach()
