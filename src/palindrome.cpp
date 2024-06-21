@@ -6,7 +6,6 @@
  */
 
 /**
- *@fn palindrome
  *@brief tests if a string is a palindrome
  *@param s string to test
  *@return 1 if the string is a palindrome

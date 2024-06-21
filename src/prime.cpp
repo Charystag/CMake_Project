@@ -1,12 +1,11 @@
 #include "prime.h"
 #include <cmath>
 /**
- *@file prime.cpp
+ *@file
  *@brief tells if a number is prime
  */
 
 /**
- *@fn prime
  *@param a the number to test
  *@return 1 if the number is prime and 0 otherwise
  */

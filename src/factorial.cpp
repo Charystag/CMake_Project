@@ -5,7 +5,6 @@
  */
 
 /**
- *@fn factorial
  *@param a the factorial number of compute
  *@return the factorial of the number if 
  *non-negative and 0 otherwise

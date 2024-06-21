@@ -6,7 +6,6 @@
  */
 
 /**
- *@fn fibonacci
  *@brief computes the ath number of the fibonacci sequence
  *@details The sequence starts with 0, 1, 1, 2, 3, 5
  *Make some researches about memoization (not memorization) to 
