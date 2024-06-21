@@ -41,3 +41,7 @@ can now run
 open docs/html/index.html
 ```
 to view the documentation in your default browser
+
+## What now?
+
+To learn more about the project, see the [how-it-works](/docs/how-it-works.md) file
