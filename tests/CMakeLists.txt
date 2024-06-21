@@ -22,3 +22,6 @@ foreach(src IN ITEMS
 	#message(NOTICE "source file looked at is : `${src}'")
 	create_test_exec(${src})
 endforeach()
+
+add_executable(test_example_class ${SRC_DIR}/test_example.cpp ${CMAKE_SOURCE_DIR}/${SRC_DIR}/example_class.cpp)
+add_test(NAME Test_example_class COMMAND test_example_class)
