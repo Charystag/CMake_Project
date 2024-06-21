@@ -7,5 +7,8 @@ function(create_test_exec func_name)
 	add_test(NAME Test_${func_name} COMMAND ${target})
 endfunction()
 
-file(GLOB files LIST_DIRECTORIES 
-for
+file(GLOB files LIST_DIRECTORIES false ${SRC_DIR}/*)
+
+foreach(src IN ${files})
+	message(DEBUG "source file looked at is : `${src}'")
+endforeach()
