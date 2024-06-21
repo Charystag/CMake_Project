@@ -1,6 +1,18 @@
 #include "palindrome.h"
 #include <cstring>
+/**
+ *@file
+ *@brief tests if a string is a palindrome
+ */
 
+/**
+ *@fn palindrome
+ *@brief tests if a string is a palindrome
+ *@param s string to test
+ *@return 1 if the string is a palindrome
+ * and 0 otherwise.
+ *@note The empty string is not a palindrome
+ */
 int	palindrome(const char * s){
 	size_t	len;
 	size_t	beg;
