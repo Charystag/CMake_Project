@@ -1,0 +1,40 @@
+\hypertarget{factorial_8h}{}\doxysection{/home/runner/work/\+CMake\+\_\+\+Project/\+CMake\+\_\+\+Project/include/factorial.h File Reference}
+\label{factorial_8h}\index{/home/runner/work/CMake\_Project/CMake\_Project/include/factorial.h@{/home/runner/work/CMake\_Project/CMake\_Project/include/factorial.h}}
+
+
+factorial  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{factorial_8h_ad6894889e84fd230aee384a49a5baec9}{factorial}} (int)
+\begin{DoxyCompactList}\small\item\em the factorial function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+factorial 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{factorial_8h_ad6894889e84fd230aee384a49a5baec9}\label{factorial_8h_ad6894889e84fd230aee384a49a5baec9}} 
+\index{factorial.h@{factorial.h}!factorial@{factorial}}
+\index{factorial@{factorial}!factorial.h@{factorial.h}}
+\doxysubsubsection{\texorpdfstring{factorial()}{factorial()}}
+{\footnotesize\ttfamily int factorial (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+the factorial function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the factorial number of compute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the factorial of the number if non-\/negative and 0 otherwise 
+\end{DoxyReturn}
