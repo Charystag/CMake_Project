@@ -1,9 +1,19 @@
 #include "fibonacci.h"
+/**
+ *@file 
+ *@brief computes a number in the sequence of
+ *fibonacci numbers
+ */
 
-/*
-Make some researches about memoization (not memorization) to 
-understand the solution to this exercise
-*/
+/**
+ *@brief computes the ath number of the fibonacci sequence
+ *@details The sequence starts with 0, 1, 1, 2, 3, 5
+ *Make some researches about memoization (not memorization) to 
+ *understand the solution to this exercise
+ *@param a the position of the number in the sequence
+ *@return 0 if the number is < 1, the term number a in the 
+ *sequence otherwise
+ */
 int	fibonacci(int a){
 	static int	terms[100];
 

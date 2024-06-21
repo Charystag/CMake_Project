@@ -3,3 +3,6 @@ build
 
 # Logs folder
 logs
+
+# Origin files
+*.orig

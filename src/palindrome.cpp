@@ -1,7 +1,17 @@
 #include "palindrome.h"
 #include <cstring>
-#include <iostream>
+/**
+ *@file
+ *@brief tests if a string is a palindrome
+ */
 
+/**
+ *@brief tests if a string is a palindrome
+ *@param s string to test
+ *@return 1 if the string is a palindrome
+ * and 0 otherwise.
+ *@note The empty string is not a palindrome
+ */
 int	palindrome(const char * s){
 	int	len;
 	int	beg;
@@ -9,7 +19,6 @@ int	palindrome(const char * s){
 	len = std::strlen(s);
 	if (! len)
 		return (0);
-	std::cout << "this is the length : " << len << std::endl;
 	beg = 0;
 	--len;
 	while (beg <= len){
