@@ -1,0 +1,32 @@
+name: CI
+
+on: [push, pull_request]
+  branches: master
+
+jobs:
+  build:
+    steps:
+	  - name: Checkout repository
+	    uses: actions/checkout@v2
+      - name: Install dependancies
+        run: |
+          sudo apt -y install cmake doxygen
+      - name: Build Project
+	    run: |
+		  cmake -B build
+		  cmake --build build
+      - name: Run tests
+	    run: ctest --test-dir build --output-on-error
+      - name: Generate Documentation
+	    if: ${{ success() }}
+		run: cmake --build build --target generate_doc
+      - name: Push Documentation
+        if: ${{ success() }}
+	    run: |
+          git config --global user.name 'Charystag'
+          git config --global user.name '57284562+Charystag@users.noreply.github.com'
+          git add docs
+          git commit -m "autocommit - updated documentation"
+          git push
+        env:
+		  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
