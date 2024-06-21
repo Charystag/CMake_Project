@@ -7,5 +7,5 @@ void	example_class::setVal(int value){
 }
 
 int	example_class::getVal(){
-	return (val)
+	return (val);
 }

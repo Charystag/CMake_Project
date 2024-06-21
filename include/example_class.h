@@ -8,6 +8,6 @@ class	example_class{
 		example_class();
 		int		getVal();
 		void	setVal(int);
-}
+};
 
 #endif

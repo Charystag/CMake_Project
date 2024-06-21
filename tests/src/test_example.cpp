@@ -4,13 +4,13 @@
 void	test_example(){
 	example_class	obj;
 
-	assert(obj.getValue() == 0);
-	obj.setValue(-2);
-	assert(obj.getValue() == -2);
-	obj.setValue(4 + 9);
-	assert(obj.getValue() == 13);
-	obj.setValue(obj.getValue() + 3);
-	assert(obj.getValue() == 16);
+	assert(obj.getVal() == 0);
+	obj.setVal(-2);
+	assert(obj.getVal() == -2);
+	obj.setVal(4 + 9);
+	assert(obj.getVal() == 13);
+	obj.setVal(obj.getVal() + 3);
+	assert(obj.getVal() == 16);
 }
 
 int	main(void){
