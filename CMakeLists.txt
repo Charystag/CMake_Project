@@ -10,5 +10,7 @@ set(TEST_DIR tests)
 
 include_directories(${INC_DIR})
 
+add_compile_options(-Wall -Wextra)
+
 add_subdirectory(${SRC_DIR})
 add_subdirectory(${TEST_DIR})
