@@ -3,7 +3,7 @@
 
 int	palindrome(const char * s){
 	size_t	len;
-	size_t	end;
+	size_t	beg;
 
 	len = std::strlen(s);
 	if (! len)
