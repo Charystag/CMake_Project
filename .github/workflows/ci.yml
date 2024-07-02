@@ -28,6 +28,7 @@ jobs:
       - name: Push Documentation
         if: ${{ success() }}
         run: |
+          if git status ; then exit 0 ; fi
           git config --global user.name 'Charystag'
           git config --global user.email '57284562+Charystag@users.noreply.github.com'
           git add docs
